@@ -20,7 +20,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AbautComponent } from './abaut/abaut.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { PromotionService } from './services/promotion.service';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
 @NgModule({
@@ -45,7 +45,9 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     MatCardModule,
     MatButtonModule
   ],
-  providers: [DishService
+  providers: [
+    DishService,
+    PromotionService
   ],
   bootstrap: [AppComponent]
 })
