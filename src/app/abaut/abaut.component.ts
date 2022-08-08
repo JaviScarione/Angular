@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Leader } from '../shared/leader';
+import { LeaderService } from '../services/leader.service';
 
 @Component({
   selector: 'app-abaut',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AbautComponent implements OnInit {
 
-  constructor() { }
+  leaders: Leader[];
+
+  constructor(private leaderService: LeaderService) { }
 
   ngOnInit() {
+    this.leaders = this.leaderService.getLeaders();
   }
 
 }
