@@ -15,7 +15,7 @@ export class AbautComponent implements OnInit {
 
   ngOnInit() {
     this.leaderService.getLeaders()
-    .then((leaders) => this.leaders = leaders)
+    .subscribe((leaders) => this.leaders = leaders)
   }
 
 }
