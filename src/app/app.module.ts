@@ -39,6 +39,7 @@ import { LoginComponent } from './login/login.component';
 import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 
 import { baseURL } from './shared/baseurl';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { baseURL } from './shared/baseurl';
     HomeComponent,
     AbautComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
